@@ -1,0 +1,23 @@
+<template>
+    <lightning-card title="Ticket Holders">
+        <div class="slds-text-align_right slds-p-bottom_small">
+            <lightning-button
+                onclick={handleAddGuest}
+                label="Add Guest"
+                class="slds-p-right_x-small"
+            >
+            </lightning-button>
+            <lightning-button 
+                onclick={handleDelete} 
+                label="Delete"
+                class = "slds-p-right_x-small"
+            >
+            </lightning-button>
+        </div> 
+        <lightning-datatable
+            key-field="id"
+            data={data}
+            columns={columns}>
+        </lightning-datatable>
+    </lightning-card>
+</template>
